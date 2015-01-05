@@ -1,0 +1,14 @@
+<%= form_for @plant_monitor do |f| %>
+  <div class="plant_monitor">
+    <h1>Monitor</h1>
+    <td>
+      <%= f.label :date %>
+      <%= f.date_field :date %>
+    </td>
+    <td><%= f.text_field :plant_height, placeholder: "Plant Height" %></td>
+    <td><%= f.text_field :water_ph, placeholder: "Water PH Reading" %></td>
+    <td><%= f.text_field :tds_reading, placeholder: "TDS Reading" %></td>
+    <td><%= f.text_area :comment, placeholder: "Additional comments" %></td>
+    <p><%= f.submit "Add plant monitor entry" %></p>
+  </div>
+<% end %>

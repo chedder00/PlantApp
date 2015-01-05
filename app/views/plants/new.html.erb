@@ -1,0 +1,15 @@
+<%= form_for @plant do |f| %>
+  <p><%= f.text_field :strain, placeholder: "Strain" %></p>
+  <p><%= f.text_field :serial_number, placeholder: "Serial #" %></p>
+  <p>
+    <%= f.label :clone %>
+    <%= f.check_box :clone %>
+  </p>
+  <p>
+    <%= f.label :harvested %>
+    <%= f.check_box :harvested %>
+  </p>
+
+  <p><%= f.submit %></p>
+  
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  strain: MyString
+  serial_number: MyString
+  clone: false
+  harvested: false
+
+two:
+  strain: MyString
+  serial_number: MyString
+  clone: false
+  harvested: false

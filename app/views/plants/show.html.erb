@@ -1,0 +1,24 @@
+<h1><%= "#{@plant.strain}[#{@plant.serial_number}]" %></h1>
+<hr />
+<h2>Monitor History</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Plant Height</th>
+    <th>Water PH</th>
+    <th>TDS Reading</th>
+    <th>Comments</th>
+  </tr>
+  <%= render @pms %>
+</table>
+<%= render 'plant_monitors/form' %>
+<hr />
+<h2>Notes</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Note</th>
+  </tr>
+  <%= render @nte %>
+</table>
+<%= render 'notes/form' %>
